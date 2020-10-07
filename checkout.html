@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" >
+  <link href="login.css" rel="stylesheet"/>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+
+ <script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+
+
+ 
+
+<body>
+<div class="card">
+  
+ 
+   <h1 class="card-header">Your Order</h1>
+    <br> <br><br>
+       <div class="card-body">
+       <form>
+       	<table  class="table">
+             <tr>
+    <th>Price</th>
+    <th>Items</th> 
+   
+  </tr>
+  <tr>
+    <td>Medium Pizza</td>
+    <td>
+    	QTY:1 <br>70 EGP<br></tr> </td>
+
+    
+  </tr>
+  <tr>
+    <td>Small Pizza</td>
+   <td><br>QTY:1 <br>40 EGP</tr> </td>
+    
+  </tr>
+ 
+ 
+  
+    
+  </tr>
+  <tr>
+</table>
+</form>
+</div>
+
+<button type="button" class="btn btn-outline-info btn-block" onclick=notify()>Check Out</button>
+
+              <script>
+function notify() {
+
+  $("#myAlert").css("display", "");
+
+}
+
+</script>
+  <br>
+  
+  <div class="container" style="display:none;" id="myAlert">
+        
+        <div class="alert alert-success" id="myAlert2">
+            <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+            Order Total: 110EGP
+        </div>
+
+
+
+
+</body>
+</div>
+</html>
